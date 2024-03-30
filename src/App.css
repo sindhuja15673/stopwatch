@@ -10,6 +10,8 @@ body{
 .stopwatch {
   text-align: center;
   padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
   max-width: 400px;
   margin-left: 220px;
   margin-top: 30px;
@@ -27,8 +29,9 @@ body{
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url('./images/clockbg.png');
+  background-image: url('./images/images.png');
   background-size: cover;
+  box-shadow: 1px 1px 6px 6px  rgb(133, 128, 128) inset;
   background-color: #b4d1f0;
   text-align: center;
   
@@ -43,7 +46,7 @@ button {
   color: #000;
   font-weight: 600;
   border: none;
-  padding: 12px 20px;
+  
   cursor: pointer;
   border-radius: 3px;
   font-size: 16px;
