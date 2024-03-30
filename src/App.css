@@ -1,38 +1,75 @@
-.App {
+ .App {
   text-align: center;
+  
+}
+body{
+  background-image: url('./images/clockbg.png');
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.stopwatch {
+  text-align: center;
+  padding: 10px;
+  max-width: 400px;
+  margin-left: 220px;
+  margin-top: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  box-shadow: 1px 1px 6px 6px  rgb(133, 128, 128);
+  border-radius: 10px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.display {
+  margin-left: 70px;
+  font-size: 2rem;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url('./images/clockbg.png');
+  background-size: cover;
+  background-color: #b4d1f0;
+  text-align: center;
+  
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+button {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
 }
+
+.buttons button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  
+  color: #141414;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.buttons button:disabled {
+  background-color: rgba(255, 255, 255, 0.15);
+  cursor: not-allowed;
+}
+.buttons button:hover:enabled {
+  background-color: rgba(255, 255, 255, 0.15);
+} 
