@@ -76,3 +76,26 @@ button:hover {
 .buttons button:hover:enabled {
   background-color: rgba(255, 255, 255, 0.15);
 } 
+
+@media screen and (max-width:768px) {
+  body{
+    font-size: 14px;
+    background-image: url('./images/clockbg.png');
+    background-size: cover;
+    text-align: center;
+  }
+  .stopwatch{
+    width: medium;
+    text-align: center;
+    padding: 0px;
+    font-size: 14px;
+  }
+  .display{
+    width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('./images/images.png');
+  background-size: cover;
+  font-size: 16px;
+  }
+}
